@@ -1,266 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Idowu Ayuba — Front-End Developer &amp; UI/UX Designer</title>
-<meta name="description" content="Idowu Ayuba is a front-end developer and UI/UX designer building clean, responsive websites for businesses." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Idowu Ayuba — Front-End Developer & UI/UX Designer" />
-<meta property="og:description" content="I build clean, responsive sites that make small businesses look professional online." />
-<meta property="og:image" content="https://idowuayuba.netlify.app/og-image.png" />
-<meta property="og:url" content="https://idowuayuba.netlify.app/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Idowu Ayuba — Front-End Developer & UI/UX Designer" />
-<meta name="twitter:description" content="I build clean, responsive sites that make small businesses look professional online." />
-<meta name="twitter:image" content="https://idowuayuba.netlify.app/og-image.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="./style.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idowu Ayuba — Front-End Developer &amp; UI/UX Designer</title>
+    <meta
+      name="description"
+      content="Idowu Ayuba is a front-end developer and UI/UX designer building clean, responsive websites for businesses."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Idowu Ayuba — Front-End Developer & UI/UX Designer"
+    />
+    <meta
+      property="og:description"
+      content="I build clean, responsive sites that make small businesses look professional online."
+    />
+    <meta
+      property="og:image"
+      content="https://idowuayuba.netlify.app/og-image.png"
+    />
+    <meta property="og:url" content="https://idowuayuba.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Idowu Ayuba — Front-End Developer & UI/UX Designer"
+    />
+    <meta
+      name="twitter:description"
+      content="I build clean, responsive sites that make small businesses look professional online."
+    />
+    <meta
+      name="twitter:image"
+      content="https://idowuayuba.netlify.app/og-image.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="siteHeader">
+      <nav class="nav">
+        <a href="#home" class="logo">AYUBA<span>.dev</span></a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav__cta">Start a project</a></li>
+        </ul>
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
 
-</head>
-<body>
-
-<header id="siteHeader">
-  <nav class="nav">
-    <a href="#home" class="logo">AYUBA<span>.dev</span></a>
-    <ul class="nav__links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact" class="nav__cta">Start a project</a></li>
-    </ul>
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</header>
-
-<section class="hero" id="home">
-  <div class="hero__grid">
-    <div class="reveal">
-      <span class="eyebrow">Websites for small businesses</span>
-      <h1>I build modern websites that help businesses look <em>professional online.</em></h1>
-      <p>I'm Idowu Ayuba — a front-end developer and UI/UX designer based in the United Kingdom. I design and build responsive websites that make it easier for customers to discover, trust and contact your business.</p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Start a project ↗</a>
-        <a href="#work" class="btn btn--ghost">View my work</a>
-      </div>
-    </div>
-    <div class="reveal codecard" style="transition-delay:.1s">
-      <div class="codecard__bar">
-        <span class="codecard__dot codecard__dot--r"></span>
-        <span class="codecard__dot codecard__dot--y"></span>
-        <span class="codecard__dot codecard__dot--g"></span>
-        <span class="codecard__tab">about-me.js</span>
-      </div>
-      <pre><span class="tok-kw">const</span> <span class="tok-key">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span>
+    <section class="hero" id="home">
+      <div class="hero__grid">
+        <div class="reveal">
+          <span class="eyebrow">Websites for small businesses</span>
+          <h1>
+            I build modern websites that help businesses look
+            <em>professional online.</em>
+          </h1>
+          <p>
+            I'm Idowu Ayuba — a front-end developer and UI/UX designer based in
+            the United Kingdom. I design and build responsive websites that make
+            it easier for customers to discover, trust and contact your
+            business.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Start a project ↗</a>
+            <a href="#work" class="btn btn--ghost">View my work</a>
+          </div>
+        </div>
+        <div class="reveal codecard" style="transition-delay: 0.1s">
+          <div class="codecard__bar">
+            <span class="codecard__dot codecard__dot--r"></span>
+            <span class="codecard__dot codecard__dot--y"></span>
+            <span class="codecard__dot codecard__dot--g"></span>
+            <span class="codecard__tab">about-me.js</span>
+          </div>
+          <pre><span class="tok-kw">const</span> <span class="tok-key">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span>
   <span class="tok-key">name</span><span class="tok-punc">:</span> <span class="tok-str">'Idowu Ayuba'</span><span class="tok-punc">,</span>
   <span class="tok-key">role</span><span class="tok-punc">:</span> <span class="tok-str">'Front-End Developer'</span><span class="tok-punc">,</span>
   <span class="tok-key">skills</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">'HTML'</span><span class="tok-punc">,</span> <span class="tok-str">'CSS'</span><span class="tok-punc">,</span> <span class="tok-str">'JavaScript'</span><span class="tok-punc">,</span> <span class="tok-str">'React'</span><span class="tok-punc">,</span> <span class="tok-str">'UI/UX'</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
   <span class="tok-key">basedIn</span><span class="tok-punc">:</span> <span class="tok-str">'United Kingdom'</span><span class="tok-punc">,</span>
   <span class="tok-key">services</span><span class="tok-punc">:</span> <span class="tok-str">'business websites &amp; UI/UX'</span>
 <span class="tok-punc">}</span><span class="cursor"></span></pre>
-    </div>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="wrap about__grid">
-    <div class="reveal">
-      <span class="eyebrow">About</span>
-      <h2>Design-minded, code-driven.</h2>
-      <p>I design and build clean, responsive websites that help businesses create a strong first impression online. I combine UI/UX thinking with front-end development so the final website looks polished and is easy to use.</p>
-      <p>My portfolio projects focus on realistic business needs — from helping a barbershop present its services to giving a restaurant or clothing brand a stronger digital presence.</p>
-    </div>
-    <div class="reveal" style="transition-delay:.1s">
-      <span class="stack__label">// Tools &amp; skills</span>
-      <div class="chips">
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">React</span>
-        <span class="chip">UI/UX Design</span>
-        <span class="chip">Figma</span>
-        <span class="chip">Responsive Design</span>
-        <span class="chip">Git &amp; GitHub</span>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">What I can build</span>
-      <h2>Web solutions for your business.</h2>
-      <p class="lead">Whether you need a simple online presence or a polished landing page, I can design and build a responsive experience around your goals.</p>
-    </div>
-
-    <div class="services__grid">
-      <article class="service reveal">
-        <span class="service__number">01</span>
-        <h3>Business Websites</h3>
-        <p>Professional, responsive websites for local businesses, services, shops and personal brands.</p>
-        <span class="service__tags">HTML · CSS · JavaScript · React</span>
-      </article>
-
-      <article class="service reveal" style="transition-delay:.08s">
-        <span class="service__number">02</span>
-        <h3>Landing Pages</h3>
-        <p>Focused pages designed to present an offer clearly and guide visitors toward one useful action.</p>
-        <span class="service__tags">UI/UX · Responsive · Conversion-focused</span>
-      </article>
-
-      <article class="service reveal" style="transition-delay:.16s">
-        <span class="service__number">03</span>
-        <h3>UI/UX Design</h3>
-        <p>Clean interface concepts and layouts that make websites easier to understand, navigate and use.</p>
-        <span class="service__tags">Figma · Wireframes · Prototypes</span>
-      </article>
-
-      <article class="service reveal" style="transition-delay:.24s">
-        <span class="service__number">04</span>
-        <h3>Website Redesigns</h3>
-        <p>Modernise an outdated website with a cleaner layout, stronger mobile experience and improved visual hierarchy.</p>
-        <span class="service__tags">Redesign · Mobile-first · Accessibility</span>
-      </article>
-    </div>
-
-    <div class="services__cta reveal">
-      <p>Have something specific in mind?</p>
-      <a href="#contact" class="btn btn--primary">Tell me about your project ↗</a>
-    </div>
-  </div>
-</section>
-
-<section class="work" id="work">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Selected work</span>
-      <h2>Projects</h2>
-      <p class="lead">A selection of business-focused builds showing how I approach design, responsive development and user experience.</p>
-    </div>
-    <div class="work__grid">
-
-      <a class="card reveal" href="https://barberpromanchester.netlify.app/" target="_blank" rel="noopener" aria-label="View BarberPro Website live demo">
-        <div class="card__window"><span></span><span></span><span></span></div>
-        <div class="card__thumb">
-          <iframe src="https://barberpromanchester.netlify.app/" tabindex="-1" aria-hidden="true" loading="lazy"></iframe>
-          <div class="overlay"><span>View live site ↗</span></div>
+    <section class="about" id="about">
+      <div class="wrap about__grid">
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2>Design-minded, code-driven.</h2>
+          <p>
+            I design and build clean, responsive websites that help businesses
+            create a strong first impression online. I combine UI/UX thinking
+            with front-end development so the final website looks polished and
+            is easy to use.
+          </p>
+          <p>
+            My portfolio projects focus on realistic business needs — from
+            helping a barbershop present its services to giving a restaurant or
+            clothing brand a stronger digital presence.
+          </p>
         </div>
-        <div class="card__body">
-          <h3>BarberPro Website</h3>
-          <p><strong>Goal:</strong> Give a local barbershop a professional online presence and make its services easy to browse. <strong>Solution:</strong> A responsive layout with clear service information and a simple path to contact the business.</p>
-          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+        <div class="reveal" style="transition-delay: 0.1s">
+          <span class="stack__label">// Tools &amp; skills</span>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">UI/UX Design</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Git &amp; GitHub</span>
+          </div>
         </div>
-      </a>
+      </div>
+    </section>
 
-      <a class="card reveal" href="https://themberoak.netlify.app/" target="_blank" rel="noopener" aria-label="View Ember & Oak restaurant live demo" style="transition-delay:.08s">
-        <div class="card__window"><span></span><span></span><span></span></div>
-        <div class="card__thumb">
-          <iframe src="https://themberoak.netlify.app/" tabindex="-1" aria-hidden="true" loading="lazy"></iframe>
-          <div class="overlay"><span>View live site ↗</span></div>
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">What I can build</span>
+          <h2>Web solutions for your business.</h2>
+          <p class="lead">
+            Whether you need a simple online presence or a polished landing
+            page, I can design and build a responsive experience around your
+            goals.
+          </p>
         </div>
-        <div class="card__body">
-          <h3>Ember &amp; Oak — Restaurant</h3>
-          <p><strong>Goal:</strong> Help a restaurant present its menu and brand professionally online. <strong>Solution:</strong> A structured restaurant experience with clear navigation, menu content and a reservation-focused contact flow.</p>
-          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span></div>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <span class="service__number">01</span>
+            <h3>Business Websites</h3>
+            <p>
+              Professional, responsive websites for local businesses, services,
+              shops and personal brands.
+            </p>
+            <span class="service__tags">HTML · CSS · JavaScript · React</span>
+          </article>
+
+          <article class="service reveal" style="transition-delay: 0.08s">
+            <span class="service__number">02</span>
+            <h3>Landing Pages</h3>
+            <p>
+              Focused pages designed to present an offer clearly and guide
+              visitors toward one useful action.
+            </p>
+            <span class="service__tags"
+              >UI/UX · Responsive · Conversion-focused</span
+            >
+          </article>
+
+          <article class="service reveal" style="transition-delay: 0.16s">
+            <span class="service__number">03</span>
+            <h3>UI/UX Design</h3>
+            <p>
+              Clean interface concepts and layouts that make websites easier to
+              understand, navigate and use.
+            </p>
+            <span class="service__tags">Figma · Wireframes · Prototypes</span>
+          </article>
+
+          <article class="service reveal" style="transition-delay: 0.24s">
+            <span class="service__number">04</span>
+            <h3>Website Redesigns</h3>
+            <p>
+              Modernise an outdated website with a cleaner layout, stronger
+              mobile experience and improved visual hierarchy.
+            </p>
+            <span class="service__tags"
+              >Redesign · Mobile-first · Accessibility</span
+            >
+          </article>
         </div>
-      </a>
 
-      <a class="card reveal" href="https://mono-fashion.netlify.app/" target="_blank" rel="noopener" aria-label="View MONO fashion store live demo" style="transition-delay:.16s">
-        <div class="card__window"><span></span><span></span><span></span></div>
-        <div class="card__thumb">
-          <iframe src="https://mono-fashion.netlify.app/" tabindex="-1" aria-hidden="true" loading="lazy"></iframe>
-          <div class="overlay"><span>View live site ↗</span></div>
+        <div class="services__cta reveal">
+          <p>Have something specific in mind?</p>
+          <a href="#contact" class="btn btn--primary"
+            >Tell me about your project ↗</a
+          >
         </div>
-        <div class="card__body">
-          <h3>MONO — Fashion Store UI</h3>
-          <p><strong>Goal:</strong> Create a polished digital storefront for a fashion brand. <strong>Solution:</strong> A mobile-first shopping interface with product discovery, visual storytelling and a clear newsletter signup.</p>
-          <div class="card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Mobile-first</span></div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2>Projects</h2>
+          <p class="lead">
+            A selection of business-focused builds showing how I approach
+            design, responsive development and user experience.
+          </p>
         </div>
-      </a>
+        <div class="work__grid">
+          <a
+            class="card reveal"
+            href="https://barberpromanchester.netlify.app/"
+            target="_blank"
+            rel="noopener"
+            aria-label="View BarberPro Website live demo"
+          >
+            <div class="card__window">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="card__thumb">
+              <iframe
+                src="https://barberpromanchester.netlify.app/"
+                tabindex="-1"
+                aria-hidden="true"
+                loading="lazy"
+              ></iframe>
+              <div class="overlay"><span>View live site ↗</span></div>
+            </div>
+            <div class="card__body">
+              <h3>BarberPro Website</h3>
+              <p>
+                <strong>Goal:</strong> Give a local barbershop a professional
+                online presence and make its services easy to browse.
+                <strong>Solution:</strong> A responsive layout with clear
+                service information and a simple path to contact the business.
+              </p>
+              <div class="card__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Responsive</span>
+              </div>
+            </div>
+          </a>
 
-    </div>
-  </div>
-</section>
+          <a
+            class="card reveal"
+            href="https://themberoak.netlify.app/"
+            target="_blank"
+            rel="noopener"
+            aria-label="View Ember & Oak restaurant live demo"
+            style="transition-delay: 0.08s"
+          >
+            <div class="card__window">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="card__thumb">
+              <iframe
+                src="https://themberoak.netlify.app/"
+                tabindex="-1"
+                aria-hidden="true"
+                loading="lazy"
+              ></iframe>
+              <div class="overlay"><span>View live site ↗</span></div>
+            </div>
+            <div class="card__body">
+              <h3>Ember &amp; Oak — Restaurant</h3>
+              <p>
+                <strong>Goal:</strong> Help a restaurant present its menu and
+                brand professionally online. <strong>Solution:</strong> A
+                structured restaurant experience with clear navigation, menu
+                content and a reservation-focused contact flow.
+              </p>
+              <div class="card__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>UI/UX</span>
+              </div>
+            </div>
+          </a>
 
-<section class="contact" id="contact">
-  <div class="wrap">
-    <span class="eyebrow" style="justify-content:center">Contact</span>
-    <h2>Need a website for your business?</h2>
-    <p class="lead">Tell me what you need, what your business does, and what you'd like your website to achieve. I'll get back to you and we can discuss the project.</p>
+          <a
+            class="card reveal"
+            href="https://mono-fashion.netlify.app/"
+            target="_blank"
+            rel="noopener"
+            aria-label="View MONO fashion store live demo"
+            style="transition-delay: 0.16s"
+          >
+            <div class="card__window">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="card__thumb">
+              <iframe
+                src="https://mono-fashion.netlify.app/"
+                tabindex="-1"
+                aria-hidden="true"
+                loading="lazy"
+              ></iframe>
+              <div class="overlay"><span>View live site ↗</span></div>
+            </div>
+            <div class="card__body">
+              <h3>MONO — Fashion Store UI</h3>
+              <p>
+                <strong>Goal:</strong> Create a polished digital storefront for
+                a fashion brand. <strong>Solution:</strong> A mobile-first
+                shopping interface with product discovery, visual storytelling
+                and a clear newsletter signup.
+              </p>
+              <div class="card__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Mobile-first</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="contact__grid">
-      <a class="contact__card" href="mailto:idowuayuba10@gmail.com">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-        <strong>Email</strong>
-        <p>idowuayuba10@gmail.com</p>
-      </a>
-      <a class="contact__card" href="https://github.com/idowuayuba10-code" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.5"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-        <strong>GitHub</strong>
-        <p>idowuayuba10-code</p>
-      </a>
-      <a class="contact__card" href="https://www.linkedin.com/in/ayuba-idowu-8b51a2401" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg>
-        <strong>LinkedIn</strong>
-        <p>ayuba-idowu</p>
-      </a>
-    </div>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <span class="eyebrow" style="justify-content: center">Contact</span>
+        <h2>Need a website for your business?</h2>
+        <p class="lead">
+          Tell me what you need, what your business does, and what you'd like
+          your website to achieve. I'll get back to you and we can discuss the
+          project.
+        </p>
 
-    <p class="contact__meta">Based in <span>the United Kingdom</span> · Available for freelance website projects</p>
-  </div>
-</section>
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:idowuayuba10@gmail.com">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E8A33D"
+              stroke-width="1.5"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            <strong>Email</strong>
+            <p>idowuayuba10@gmail.com</p>
+          </a>
+          <a
+            class="contact__card"
+            href="https://github.com/idowuayuba10-code"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E8A33D"
+              stroke-width="1.5"
+            >
+              <path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+              />
+            </svg>
+            <strong>GitHub</strong>
+            <p>idowuayuba10-code</p>
+          </a>
+          <a
+            class="contact__card"
+            href="https://www.linkedin.com/in/ayuba-idowu-8b51a2401"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E8A33D"
+              stroke-width="1.5"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4" />
+            </svg>
+            <strong>LinkedIn</strong>
+            <p>ayuba-idowu</p>
+          </a>
+        </div>
 
-<footer>
-  © <span id="year"></span> Idowu Ayuba — Built with HTML, CSS &amp; JavaScript.
-</footer>
+        <p class="contact__meta">
+          Based in <span>the United Kingdom</span> · Available for freelance
+          website projects
+        </p>
+      </div>
+    </section>
 
-<script>
-  // Mobile nav toggle
-  const toggle = document.getElementById('navToggle');
-  const links = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    const isOpen = links.classList.toggle('open');
-    toggle.classList.toggle('open', isOpen);
-    toggle.setAttribute('aria-expanded', isOpen);
-  });
-  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    links.classList.remove('open');
-    toggle.classList.remove('open');
-    toggle.setAttribute('aria-expanded', false);
-  }));
+    <footer>
+      © <span id="year"></span> Idowu Ayuba — Built with HTML, CSS &amp;
+      JavaScript.
+    </footer>
 
-  // Header background on scroll
-  const header = document.getElementById('siteHeader');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
-  document.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  // Scroll reveal
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduceMotion && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
+    <script>
+      // Mobile nav toggle
+      const toggle = document.getElementById("navToggle");
+      const links = document.getElementById("navLinks");
+      toggle.addEventListener("click", () => {
+        const isOpen = links.classList.toggle("open");
+        toggle.classList.toggle("open", isOpen);
+        toggle.setAttribute("aria-expanded", isOpen);
       });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  } else {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
-  }
+      links.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          links.classList.remove("open");
+          toggle.classList.remove("open");
+          toggle.setAttribute("aria-expanded", false);
+        }),
+      );
 
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+      // Header background on scroll
+      const header = document.getElementById("siteHeader");
+      const onScroll = () =>
+        header.classList.toggle("scrolled", window.scrollY > 12);
+      document.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
 
-</body>
+      // Scroll reveal
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+      } else {
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("is-visible"));
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
